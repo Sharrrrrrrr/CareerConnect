@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CareerConnect - Where Careers Meet Opportunities</title>
+        <link rel="icon" href="img/white_in_blue_head.png">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body class="body">
+        <header class="header">
+            <div class="navbar">
+                <img src="img/white_in_blue_head.png" class="logo">
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">Sign Up</a></li>
+                    </ul>
+                </nav>
+                <img src="img/menu_icon.png" class="menu-icon" 
+                onclick="tooglemenu()">
+             </div>
+        </header>
+
+        <main class="main">
+            <div class="col1">
+                <h2>Welcome to<br>CareerConnect</h2>
+                <h3>Where Careers Meet Opportunities</h3>
+                <p>Find A Connection Anywhere In The World!</p>
+                <h4>Start For Free</h4>
+                <button type="button">Sign Up
+                    <img src="img/white_in_blue_head.png">
+                </button>
+            </div>
+            <div class="col2">
+                <img src="img/logo-removebg.png" class="image">
+                <div class="color-box"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <img src="img/fc.png">
+            <img src="img/tw.png">
+            <img src="img/in.png">
+        </footer>
+
+        <script>
+
+            var menulist = document.getElementById("menulist");
+
+            menulist.style.maxHeight = "0px"
+
+            function tooglemenu() {
+                if(menulist.style.maxHeight == "0px") {
+                    menulist.style.maxHeight = "130px";
+                }
+                else {
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+
+        </script>
+    </body>
+</html>
